@@ -1,5 +1,6 @@
 package me.snowman.prename;
 
+import me.snowman.prename.Utils.MessageUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -15,13 +16,14 @@ import java.util.Map;
 public class Items {
     private ItemRename plugin = ItemRename.getPlugin(ItemRename.class);
     public static Map<String, String> mat = new HashMap<>();
+    private MessageUtils msgUtils = new MessageUtils();
 
     // 1.8 - 1.13 compatibility here, I hate it so much
     public void matInit(){
         String[] tmp = Bukkit.getVersion().split("MC: ");
         String version = tmp[tmp.length - 1].substring(0, 4);
         if (version.equals("1.8.") || version.equals("1.9.") || version.equals("1.10") || version.equals("1.11") || version.equals("1.12")) {
-            Bukkit.getConsoleSender().sendMessage(ChatColor.BLUE + "Found server version: " + ChatColor.WHITE + "1.8 - 1.12.2");
+            Bukkit.getConsoleSender().sendMessage(msgUtils.colorize("&1Found server version: &f1.8 - 1.12.2"));
             mat.put("black", "INK_SACK");
             mat.put("red", "INK_SACK");
             mat.put("dgreen", "INK_SACK");
@@ -44,9 +46,9 @@ public class Items {
             mat.put("orange_glass_pane", "STAINED_GLASS_PANE");
             mat.put("yellow_glass_pane", "STAINED_GLASS_PANE");
             mat.put("green_glass_pane", "STAINED_GLASS_PANE");
-            Bukkit.getConsoleSender().sendMessage(ChatColor.BLUE + "Successfully switched to materials from version: " + ChatColor.WHITE + "1.8 - 1.12.2");
+            Bukkit.getConsoleSender().sendMessage(msgUtils.colorize("&1Successfully switched to materials from version: &f1.8 - 1.12.2"));
         }else{
-            Bukkit.getConsoleSender().sendMessage(ChatColor.BLUE + "Found server version: " + ChatColor.WHITE + "1.13");
+            Bukkit.getConsoleSender().sendMessage(msgUtils.colorize("&1Found server version: &f1.13"));
             mat.put("black", "INK_SAC");
             mat.put("red", "ROSE_RED");
             mat.put("dgreen", "CACTUS_GREEN");
@@ -69,34 +71,34 @@ public class Items {
             mat.put("orange_glass_pane", "ORANGE_STAINED_GLASS_PANE");
             mat.put("yellow_glass_pane", "YELLOW_STAINED_GLASS_PANE");
             mat.put("green_glass_pane", "LIME_STAINED_GLASS_PANE");
-            Bukkit.getConsoleSender().sendMessage(ChatColor.BLUE + "Successfully switched to materials from version: " + ChatColor.WHITE + "1.13");
+            Bukkit.getConsoleSender().sendMessage(msgUtils.colorize("&1Successfully switched to materials from version: &f1.13"));
         }
     }
 
     List<String> lorerenametag = ItemRename.getPlugin(ItemRename.class).getConfig().getStringList("TagRenameLore");
 
     public List<String> getLorecolortag() {
-        lorerenametag.replaceAll(string -> ChatColor.translateAlternateColorCodes('&', string));
+        lorerenametag.replaceAll(string -> msgUtils.colorize(string));
         return lorecolortag;
     }
 
     List<String> lorecolortag = plugin.getConfig().getStringList("TagColorLore");
 
     public List<String> getLorerenametag(){
-        lorecolortag.replaceAll(string -> ChatColor.translateAlternateColorCodes('&', string));
+        lorecolortag.replaceAll(string -> msgUtils.colorize(string));
     return lorerenametag;
     }
 
     List<String> dyelore = plugin.getConfig().getStringList("DyeLore");
 
     public List<String> getDyelore() {
-        dyelore.replaceAll(string -> ChatColor.translateAlternateColorCodes('&', string));
+        dyelore.replaceAll(string -> msgUtils.colorize(string));
         return dyelore;
     }
 
     List<String> lockedlore = plugin.getConfig().getStringList("LockedLore");
     public List<String> getLockedlore() {
-        lockedlore.replaceAll(string -> ChatColor.translateAlternateColorCodes('&', string));
+        lockedlore.replaceAll(string -> msgUtils.colorize(string));
         return lockedlore;
     }
 
@@ -156,12 +158,12 @@ public class Items {
             dgray.setItemMeta(dgrmeta);
             return dgray;
         }
-        public ItemStack lpurple(){
-            ItemStack lpurple = new ItemStack(Material.matchMaterial(mat.get("pink")), 1, (byte) 9);
-            ItemMeta lpmeta = lpurple.getItemMeta();
+        public ItemStack pink(){
+            ItemStack pink = new ItemStack(Material.matchMaterial(mat.get("pink")), 1, (byte) 9);
+            ItemMeta lpmeta = pink.getItemMeta();
             lpmeta.setLore(getDyelore());
-            lpurple.setItemMeta(lpmeta);
-            return lpurple;
+            pink.setItemMeta(lpmeta);
+            return pink;
         }
         public ItemStack green(){
             ItemStack green = new ItemStack(Material.matchMaterial(mat.get("green")), 1, (byte) 10);
@@ -222,38 +224,38 @@ public class Items {
         public ItemStack error(){
             ItemStack error = new ItemStack(Material.matchMaterial(mat.get("red_glass_pane")), 1, (byte) 14);
             ItemMeta emeta = error.getItemMeta();
-            emeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("Messages.Error")));
+            emeta.setDisplayName(msgUtils.colorize( plugin.getConfig().getString("Messages.Error")));
             error.setItemMeta(emeta);
             return error;
         }
         public ItemStack nomoneyr(){
             ItemStack nomoneyr = new ItemStack(Material.matchMaterial(mat.get("orange_glass_pane")), 1, (byte) 1);
             ItemMeta normmeta = nomoneyr.getItemMeta();
-            normmeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("Messages.NoMoney")).replace("%required%", plugin.getConfig().getString("RenameCost")));
+            normmeta.setDisplayName(msgUtils.colorize( plugin.getConfig().getString("Messages.NoMoney")).replace("%required%", plugin.getConfig().getString("RenameCost")));
             nomoneyr.setItemMeta(normmeta);
             return nomoneyr;
         }
         public ItemStack nomoneyc(){
             ItemStack nomoneyc = new ItemStack(Material.matchMaterial(mat.get("orange_glass_pane")), 1, (byte) 1);
             ItemMeta nocmmeta = nomoneyc.getItemMeta();
-            nocmmeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("Messages.NoMoney")).replace("%required%", plugin.getConfig().getString("ColorizeCost")));
+            nocmmeta.setDisplayName(msgUtils.colorize( plugin.getConfig().getString("Messages.NoMoney")).replace("%required%", plugin.getConfig().getString("ColorizeCost")));
             nomoneyc.setItemMeta(nocmmeta);
             return nomoneyc;
         }
         public ItemStack waiting(){
             ItemStack waiting = new ItemStack(Material.matchMaterial(mat.get("yellow_glass_pane")), 1, (byte) 4);
             ItemMeta wmeta = waiting.getItemMeta();
-            wmeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("Messages.Waiting")));
+            wmeta.setDisplayName(msgUtils.colorize( plugin.getConfig().getString("Messages.Waiting")));
             waiting.setItemMeta(wmeta);
             return waiting;
         }
         public ItemStack readyr(){
             ItemStack readyr = new ItemStack(Material.matchMaterial(mat.get("green_glass_pane")), 1, (byte) 13);
             ItemMeta rrmeta = readyr.getItemMeta();
-            rrmeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("Messages.ReadyRename")));
+            rrmeta.setDisplayName(msgUtils.colorize( plugin.getConfig().getString("Messages.ReadyRename")));
             ArrayList<String> lore = new ArrayList<>();
             lore.add(" ");
-            lore.add(ChatColor.BLUE + "" + ChatColor.BOLD + "CLICK");
+            lore.add(msgUtils.colorize("&1&lCLICK"));
             rrmeta.setLore(lore);
             readyr.setItemMeta(rrmeta);
             return readyr;
@@ -261,10 +263,10 @@ public class Items {
         public ItemStack readyc(){
             ItemStack readyc = new ItemStack(Material.matchMaterial(mat.get("green_glass_pane")), 1, (byte) 13);
             ItemMeta rcmeta = readyc.getItemMeta();
-            rcmeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("Messages.ReadyColor")));
+            rcmeta.setDisplayName(msgUtils.colorize( plugin.getConfig().getString("Messages.ReadyColor")));
             ArrayList<String> lore = new ArrayList<>();
             lore.add(" ");
-            lore.add(ChatColor.BLUE + "" + ChatColor.BOLD + "CLICK");
+            lore.add(msgUtils.colorize("&1&lCLICK"));
             rcmeta.setLore(lore);
             readyc.setItemMeta(rcmeta);
             return readyc;
