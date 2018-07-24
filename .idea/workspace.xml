@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49ca7088-5784-4e2d-9310-099e2c64174a" name="Default" comment="" />
+    <list default="true" id="49ca7088-5784-4e2d-9310-099e2c64174a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/snowman/prename/Commands/Rename.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/snowman/prename/Commands/Rename.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/snowman/prename/Events/ClickInv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/snowman/prename/Events/ClickInv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/snowman/prename/ItemRename.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/snowman/prename/ItemRename.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/snowman/prename/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/snowman/prename/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ItemReame-1.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ItemReame-1.3.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/snowman/prename/Commands/Rename.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/snowman/prename/ItemRename$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/snowman/prename/Items.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,37 +23,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ItemRename.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/ItemRename.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="47" />
-              <folding>
-                <element signature="method#onDisable#0;class#ItemRename#0" />
-                <element signature="method#setupEconomy#0;class#ItemRename#0" />
-                <element signature="method#rename#0;class#ItemRename#0" />
-                <element signature="e#2265#6955#0" expanded="true" />
-                <element signature="e#6954#6955#0" expanded="true" />
-                <element signature="method#colorize#0;class#ItemRename#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Items.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Items.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="202" selection-start-line="202" selection-end-line="202" />
+            <state relative-caret-position="245">
+              <caret line="304" selection-start-line="304" selection-end-line="312" selection-end-column="5" />
               <folding>
-                <element signature="method#matInit#0;class#Items#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#black#0;class#Items#0" />
+                <element signature="method#red#0;class#Items#0" />
+                <element signature="method#darkgreen#0;class#Items#0" />
+                <element signature="method#blue#0;class#Items#0" />
+                <element signature="method#purple#0;class#Items#0" />
+                <element signature="method#aqua#0;class#Items#0" />
+                <element signature="method#gray#0;class#Items#0" />
+                <element signature="method#darkgray#0;class#Items#0" />
+                <element signature="method#pink#0;class#Items#0" />
+                <element signature="method#green#0;class#Items#0" />
+                <element signature="method#yellow#0;class#Items#0" />
+                <element signature="method#lightblue#0;class#Items#0" />
+                <element signature="method#gold#0;class#Items#0" />
+                <element signature="method#white#0;class#Items#0" />
+                <element signature="method#bold#0;class#Items#0" />
+                <element signature="method#italic#0;class#Items#0" />
+                <element signature="method#locked#0;class#Items#0" />
                 <element signature="method#error#0;class#Items#0" />
                 <element signature="method#nomoneyr#0;class#Items#0" />
                 <element signature="method#nomoneyc#0;class#Items#0" />
                 <element signature="method#waiting#0;class#Items#0" />
                 <element signature="method#readyr#0;class#Items#0" />
                 <element signature="method#readyc#0;class#Items#0" />
-                <element signature="method#empty#0;class#Items#0" />
               </folding>
             </state>
           </provider>
@@ -52,17 +61,11 @@
       <file leaf-file-name="Rename.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Commands/Rename.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="219" column="9" lean-forward="true" selection-end-line="277" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClickInv.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Events/ClickInv.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-743">
-              <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            <state relative-caret-position="237">
+              <caret line="145" column="133" lean-forward="true" selection-start-line="145" selection-start-column="133" selection-end-line="145" selection-end-column="133" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,10 +84,12 @@
       <find>msgUtils.colorize(</find>
       <find>ChatColor.translateAlternateColorCodes('&amp;',</find>
       <find>ChatColor</find>
-      <find>ChatColor.translateAlternateColorCodes('&amp;',</find>
+      <find>())</find>
     </findStrings>
     <replaceStrings>
       <replace>msgUtils.colorize(</replace>
+      <replace>1</replace>
+      <replace>(1))</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -95,8 +100,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/me/snowman/prename/Utils/MessageUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/snowman/prename/ItemRename.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/snowman/prename/Events/ClickInv.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/snowman/prename/ItemRename.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/snowman/prename/Items.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/snowman/prename/Commands/Rename.java" />
       </list>
@@ -126,10 +131,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="57" />
+    <option name="x" value="215" />
     <option name="y" value="22" />
-    <option name="width" value="1841" />
-    <option name="height" value="1004" />
+    <option name="width" value="1694" />
+    <option name="height" value="904" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -137,63 +142,54 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="ItemReame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ItemReame" type="462c0819:PsiDirectoryNode" />
+              <item name="snowman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snowman" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ItemReame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ItemReame" type="462c0819:PsiDirectoryNode" />
+              <item name="snowman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snowman" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ItemReame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ItemReame" type="462c0819:PsiDirectoryNode" />
+              <item name="snowman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snowman" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ItemReame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ItemReame" type="462c0819:PsiDirectoryNode" />
+              <item name="snowman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snowman" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ItemReame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ItemReame" type="462c0819:PsiDirectoryNode" />
+              <item name="snowman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snowman" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="prename" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ItemReame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ItemReame" type="462c0819:PsiDirectoryNode" />
+              <item name="snowman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snowman" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="prename" type="462c0819:PsiDirectoryNode" />
               <item name="Commands" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ItemReame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ItemReame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="prename" type="462c0819:PsiDirectoryNode" />
-              <item name="Events" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,39 +266,67 @@
       <updated>1532377842923</updated>
       <workItem from="1532377844139" duration="41000" />
       <workItem from="1532377913890" duration="4226000" />
+      <workItem from="1532405986730" duration="3326000" />
+      <workItem from="1532409680004" duration="9332000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4267000" />
+    <option name="totallyTimeSpent" value="16925000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="22" width="1841" height="1004" extended-state="0" />
+    <frame x="215" y="22" width="1694" height="904" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.115619786" />
+      <window_info active="true" anchor="right" id="Maven Projects" order="5" visible="true" weight="0.12590799" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3296582" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35935563" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25236243" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.28026634" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.28026634" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35935563" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.12590799" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -312,21 +336,124 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Items.java</url>
-          <line>268</line>
+          <line>293</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Items.java</url>
-          <line>245</line>
+          <line>268</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="11" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Items.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2715">
+          <caret line="181" column="36" selection-start-line="181" selection-start-column="36" selection-end-line="181" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#black#0;class#Items#0" />
+            <element signature="method#red#0;class#Items#0" />
+            <element signature="method#darkgreen#0;class#Items#0" />
+            <element signature="method#blue#0;class#Items#0" />
+            <element signature="method#purple#0;class#Items#0" />
+            <element signature="method#aqua#0;class#Items#0" />
+            <element signature="method#gray#0;class#Items#0" />
+            <element signature="method#darkgray#0;class#Items#0" />
+            <element signature="method#pink#0;class#Items#0" />
+            <element signature="method#green#0;class#Items#0" />
+            <element signature="method#yellow#0;class#Items#0" />
+            <element signature="method#lightblue#0;class#Items#0" />
+            <element signature="method#gold#0;class#Items#0" />
+            <element signature="method#white#0;class#Items#0" />
+            <element signature="method#bold#0;class#Items#0" />
+            <element signature="method#italic#0;class#Items#0" />
+            <element signature="method#locked#0;class#Items#0" />
+            <element signature="method#error#0;class#Items#0" />
+            <element signature="method#nomoneyr#0;class#Items#0" />
+            <element signature="method#nomoneyc#0;class#Items#0" />
+            <element signature="method#waiting#0;class#Items#0" />
+            <element signature="method#readyr#0;class#Items#0" />
+            <element signature="method#readyc#0;class#Items#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Commands/Rename.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2385">
+          <caret line="159" column="54" lean-forward="true" selection-start-line="159" selection-start-column="54" selection-end-line="159" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/ItemRename.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="47" />
+          <folding>
+            <element signature="method#onDisable#0;class#ItemRename#0" />
+            <element signature="method#setupEconomy#0;class#ItemRename#0" />
+            <element signature="method#rename#0;class#ItemRename#0" />
+            <element signature="method#colorize#0;class#ItemRename#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Items.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3030">
+          <caret line="202" selection-start-line="202" selection-end-line="202" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#black#0;class#Items#0" />
+            <element signature="method#red#0;class#Items#0" />
+            <element signature="method#darkgreen#0;class#Items#0" />
+            <element signature="method#blue#0;class#Items#0" />
+            <element signature="method#purple#0;class#Items#0" />
+            <element signature="method#aqua#0;class#Items#0" />
+            <element signature="method#gray#0;class#Items#0" />
+            <element signature="method#darkgray#0;class#Items#0" />
+            <element signature="method#pink#0;class#Items#0" />
+            <element signature="method#green#0;class#Items#0" />
+            <element signature="method#yellow#0;class#Items#0" />
+            <element signature="method#lightblue#0;class#Items#0" />
+            <element signature="method#gold#0;class#Items#0" />
+            <element signature="method#white#0;class#Items#0" />
+            <element signature="method#bold#0;class#Items#0" />
+            <element signature="method#italic#0;class#Items#0" />
+            <element signature="method#locked#0;class#Items#0" />
+            <element signature="method#error#0;class#Items#0" />
+            <element signature="method#nomoneyr#0;class#Items#0" />
+            <element signature="method#nomoneyc#0;class#Items#0" />
+            <element signature="method#waiting#0;class#Items#0" />
+            <element signature="method#readyr#0;class#Items#0" />
+            <element signature="method#readyc#0;class#Items#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Events/ClickInv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Commands/Rename.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3075">
+          <caret line="219" column="9" lean-forward="true" selection-end-line="277" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -358,21 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/ItemRename.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="47" />
-          <folding>
-            <element signature="method#onDisable#0;class#ItemRename#0" />
-            <element signature="method#setupEconomy#0;class#ItemRename#0" />
-            <element signature="method#rename#0;class#ItemRename#0" />
-            <element signature="e#2265#6955#0" expanded="true" />
-            <element signature="e#6954#6955#0" expanded="true" />
-            <element signature="method#colorize#0;class#ItemRename#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Metrics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3810">
@@ -384,34 +496,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Events/ClickInv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="109" column="17" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/ItemRename.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="method#onDisable#0;class#ItemRename#0" />
+            <element signature="method#setupEconomy#0;class#ItemRename#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Items.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="202" selection-start-line="202" selection-end-line="202" />
+        <state relative-caret-position="245">
+          <caret line="304" selection-start-line="304" selection-end-line="312" selection-end-column="5" />
           <folding>
-            <element signature="method#matInit#0;class#Items#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#black#0;class#Items#0" />
+            <element signature="method#red#0;class#Items#0" />
+            <element signature="method#darkgreen#0;class#Items#0" />
+            <element signature="method#blue#0;class#Items#0" />
+            <element signature="method#purple#0;class#Items#0" />
+            <element signature="method#aqua#0;class#Items#0" />
+            <element signature="method#gray#0;class#Items#0" />
+            <element signature="method#darkgray#0;class#Items#0" />
+            <element signature="method#pink#0;class#Items#0" />
+            <element signature="method#green#0;class#Items#0" />
+            <element signature="method#yellow#0;class#Items#0" />
+            <element signature="method#lightblue#0;class#Items#0" />
+            <element signature="method#gold#0;class#Items#0" />
+            <element signature="method#white#0;class#Items#0" />
+            <element signature="method#bold#0;class#Items#0" />
+            <element signature="method#italic#0;class#Items#0" />
+            <element signature="method#locked#0;class#Items#0" />
             <element signature="method#error#0;class#Items#0" />
             <element signature="method#nomoneyr#0;class#Items#0" />
             <element signature="method#nomoneyc#0;class#Items#0" />
             <element signature="method#waiting#0;class#Items#0" />
             <element signature="method#readyr#0;class#Items#0" />
             <element signature="method#readyc#0;class#Items#0" />
-            <element signature="method#empty#0;class#Items#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Events/ClickInv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-743">
-          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Commands/Rename.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="219" column="9" lean-forward="true" selection-end-line="277" />
+        <state relative-caret-position="237">
+          <caret line="145" column="133" lean-forward="true" selection-start-line="145" selection-start-column="133" selection-end-line="145" selection-end-column="133" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

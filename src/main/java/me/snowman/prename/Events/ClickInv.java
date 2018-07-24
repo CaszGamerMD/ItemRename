@@ -65,7 +65,7 @@ public class ClickInv implements Listener {
             if(event.getInventory().getItem(1) == null){
                 return;
            }
-            if(event.getCurrentItem().equals(i.readyc()) && player.getOpenInventory().getItem(1).getItemMeta().getLore().equals(i.getLorerenametag()) && player.getOpenInventory().getItem(3).equals(i.bold()) || player.getOpenInventory().getItem(3).equals(i.italic()) || player.getOpenInventory().getItem(3).equals(i.locked())){
+            if(event.getCurrentItem().equals(i.readyc()) && player.getOpenInventory().getItem(1).getItemMeta().getLore().equals(i.getLorerenametag()) && player.getOpenInventory().getItem(3).equals(i.bold(1)) || player.getOpenInventory().getItem(3).equals(i.italic(1)) || player.getOpenInventory().getItem(3).equals(i.locked(1))){
                 if(event.getInventory().getItem(7) == null){
                     return;
                 }

@@ -14,8 +14,8 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.List;
-
 
 public class Rename implements CommandExecutor {
     private ItemRename plugin = ItemRename.getPlugin(ItemRename.class);
@@ -115,7 +115,7 @@ public class Rename implements CommandExecutor {
         if (args[0].equalsIgnoreCase("dye")) {
 
             if (args.length == 1) {
-                sender.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.NoDye") + "\n&0BLACK&7, &4RED&7, &2DARKGREEN&7, &3BLUE&7, &5DARKPURPLE&7, &1DARKAQUA&7, &7GRAY, &8DARKGRAY&7, &dPINK&7, &aGREEN&7, &eYELLOW, &bAQUA&7, &6GOLD&7, &fWHITE&7, &r&lBOLD&7, &r&oITALIC&7, &8LOCKED"));
+                sender.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.NoDye") + "\n&0BLACK&7, &4RED&7, &2DARKGREEN&7, &3AQUA&7, &5DARKPURPLE&7, &1BLUE&7, &7GRAY, &8DARKGRAY&7, &dPINK&7, &aGREEN&7, &eYELLOW, &bLIGHTBLUE&7, &6GOLD&7, &fWHITE&7, &r&lBOLD&7, &r&oITALIC&7, &8LOCKED"));
             }
 
             if (args.length == 2) {
@@ -124,154 +124,95 @@ public class Rename implements CommandExecutor {
                 } else {
                     Player player = (Player) sender;
                     if (player.hasPermission("itemrename.dye")) {
-                        if (args[1].equalsIgnoreCase("black")) {
-                            player.getInventory().addItem(i.black());
-                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]));
-                        }
-                        if (args[1].equalsIgnoreCase("red")) {
-                            player.getInventory().addItem(i.red());
-                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]));
-                        }
-                        if (args[1].equalsIgnoreCase("darkgreen")) {
-                            player.getInventory().addItem(i.dgreen());
-                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]));
-                        }
-                        if (args[1].equalsIgnoreCase("blue")) {
-                            player.getInventory().addItem(i.blue());
-                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]));
-                        }
-                        if (args[1].equalsIgnoreCase("darkpurple")) {
-                            player.getInventory().addItem(i.dpurple());
-                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]));
-                        }
-                        if (args[1].equalsIgnoreCase("darkaqua")) {
-                            player.getInventory().addItem(i.daqua());
-                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]));
-                        }
-                        if (args[1].equalsIgnoreCase("gray")) {
-                            player.getInventory().addItem(i.gray());
-                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]));
-                        }
-                        if (args[1].equalsIgnoreCase("darkgray")) {
-                            player.getInventory().addItem(i.dgray());
-                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]));
-                        }
-                        if (args[1].equalsIgnoreCase("pink")) {
-                            player.getInventory().addItem(i.pink());
-                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]));
-                        }
-                        if (args[1].equalsIgnoreCase("green")) {
-                            player.getInventory().addItem(i.green());
-                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]));
-                        }
-                        if (args[1].equalsIgnoreCase("yellow")) {
-                            player.getInventory().addItem(i.yellow());
-                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]));
-                        }
-                        if (args[1].equalsIgnoreCase("aqua")) {
-                            player.getInventory().addItem(i.aqua());
-                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]));
-                        }
-                        if (args[1].equalsIgnoreCase("gold")) {
-                            player.getInventory().addItem(i.gold());
-                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]));
-                        }
-                        if (args[1].equalsIgnoreCase("white")) {
-                            player.getInventory().addItem(i.white());
-                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]));
-                        }
-                        if (args[1].equalsIgnoreCase("bold")) {
-                            player.getInventory().addItem(i.bold());
-                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]));
-                        }
-                        if (args[1].equalsIgnoreCase("italic")) {
-                            player.getInventory().addItem(i.italic());
-                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]));
-                        }
-                        if (args[1].equalsIgnoreCase("locked")) {
-                            player.getInventory().addItem(i.locked());
-                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]));
-                        }
+                        int amount = 1;
                         if (args[1].equalsIgnoreCase("all")) {
-                            player.getInventory().addItem(i.red());
-                            player.getInventory().addItem(i.gold());
-                            player.getInventory().addItem(i.yellow());
-                            player.getInventory().addItem(i.green());
-                            player.getInventory().addItem(i.dgreen());
-                            player.getInventory().addItem(i.daqua());
-                            player.getInventory().addItem(i.aqua());
-                            player.getInventory().addItem(i.blue());
-                            player.getInventory().addItem(i.dpurple());
-                            player.getInventory().addItem(i.pink());
-                            player.getInventory().addItem(i.white());
-                            player.getInventory().addItem(i.gray());
-                            player.getInventory().addItem(i.dgray());
-                            player.getInventory().addItem(i.black());
-                            player.getInventory().addItem(i.bold());
-                            player.getInventory().addItem(i.italic());
-                            player.getInventory().addItem(i.locked());
-                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]));
+                            player.getInventory().addItem(i.red(amount));
+                            player.getInventory().addItem(i.gold(amount));
+                            player.getInventory().addItem(i.yellow(amount));
+                            player.getInventory().addItem(i.green(amount));
+                            player.getInventory().addItem(i.darkgreen(amount));
+                            player.getInventory().addItem(i.aqua(amount));
+                            player.getInventory().addItem(i.lightblue(amount));
+                            player.getInventory().addItem(i.blue(amount));
+                            player.getInventory().addItem(i.purple(amount));
+                            player.getInventory().addItem(i.pink(amount));
+                            player.getInventory().addItem(i.white(amount));
+                            player.getInventory().addItem(i.gray(amount));
+                            player.getInventory().addItem(i.darkgray(amount));
+                            player.getInventory().addItem(i.black(amount));
+                            player.getInventory().addItem(i.bold(amount));
+                            player.getInventory().addItem(i.italic(amount));
+                            player.getInventory().addItem(i.locked(amount));
+                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", "&5Sampler Set"));
+                        } else {
+                            try {
+                                player.getInventory().addItem(i.dyeColor(args[1], amount));
+                                player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]));
+                            } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+                                sender.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.NoDye") + "\n&0BLACK&7, &4RED&7, &2DARKGREEN&7, &3AQUA&7, &5DARKPURPLE&7, &1BLUE&7, &7GRAY, &8DARKGRAY&7, &dPINK&7, &aGREEN&7, &eYELLOW, &bLIGHTBLUE&7, &6GOLD&7, &fWHITE&7, &r&lBOLD&7, &r&oITALIC&7, &8LOCKED"));
+                            }
                         }
                     } else {
                         sender.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.NoPerm")));
+
                     }
                 }
             }
-        }
 
-        if (args[0].equalsIgnoreCase("tag")) {
-            if (!(sender instanceof Player)) {
-                sender.sendMessage(msgUtils.colorize("&1The console can't have tags :("));
-                return true;
-            }
-            Player player = (Player) sender;
-            if (player.hasPermission("itemrename.tag")) {
-                if (args.length >= 2) {
-                    String name = "";
-                    for (int i = 1; i < args.length; i++) {
-                        //noinspection StringConcatenationInLoop
-                        name = name + args[i] + " ";
-                    }
-                    System.out.println(name);
-                    ItemStack tag = new ItemStack(Material.NAME_TAG, 1);
-                    ItemMeta tagmeta = tag.getItemMeta();
-                    lorecolortag.replaceAll(string -> msgUtils.colorize(string));
-                    tagmeta.setLore(lorecolortag);
-                    tagmeta.setDisplayName(msgUtils.colorize(name));
-                    tag.setItemMeta(tagmeta);
-                    player.getInventory().addItem(tag);
-                    player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.TagGive")));
+            if (args[0].equalsIgnoreCase("tag")) {
+                if (!(sender instanceof Player)) {
+                    sender.sendMessage(msgUtils.colorize("&1The console can't have tags :("));
                     return true;
+                }
+                Player player = (Player) sender;
+                if (player.hasPermission("itemrename.tag")) {
+                    if (args.length >= 2) {
+                        String name = "";
+                        for (int i = 1; i < args.length; i++) {
+                            //noinspection StringConcatenationInLoop
+                            name = name + args[i] + " ";
+                        }
+                        System.out.println(name);
+                        ItemStack tag = new ItemStack(Material.NAME_TAG, 1);
+                        ItemMeta tagmeta = tag.getItemMeta();
+                        lorecolortag.replaceAll(string -> msgUtils.colorize(string));
+                        tagmeta.setLore(lorecolortag);
+                        tagmeta.setDisplayName(msgUtils.colorize(name));
+                        tag.setItemMeta(tagmeta);
+                        player.getInventory().addItem(tag);
+                        player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.TagGive")));
+                        return true;
 
+                    } else {
+
+                        ItemStack tag = new ItemStack(Material.NAME_TAG, 1);
+                        ItemMeta tagmeta = tag.getItemMeta();
+                        lorecolortag.replaceAll(string -> msgUtils.colorize(string));
+                        tagmeta.setLore(lorecolortag);
+                        tagmeta.setDisplayName("Rename Tag");
+                        tag.setItemMeta(tagmeta);
+                        player.getInventory().addItem(tag);
+                        player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.TagGive")));
+                        return true;
+                    }
                 } else {
-
-                    ItemStack tag = new ItemStack(Material.NAME_TAG, 1);
-                    ItemMeta tagmeta = tag.getItemMeta();
-                    lorecolortag.replaceAll(string -> msgUtils.colorize(string));
-                    tagmeta.setLore(lorecolortag);
-                    tagmeta.setDisplayName("Rename Tag");
-                    tag.setItemMeta(tagmeta);
-                    player.getInventory().addItem(tag);
-                    player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.TagGive")));
-                    return true;
+                    sender.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.NoPerm")));
                 }
-            } else {
-                sender.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.NoPerm")));
             }
-        }
 
 
-        if (args[0].equalsIgnoreCase("reload")) {
-            if (sender.hasPermission("itemrename.reload")) {
-                i.matInit();
-                plugin.reloadConfig();
-                sender.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.Reload")));
-                return true;
-            } else {
-                sender.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.NoPerm")));
+            if (args[0].equalsIgnoreCase("reload")) {
+                if (sender.hasPermission("itemrename.reload")) {
+                    i.matInit();
+                    plugin.reloadConfig();
+                    sender.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.Reload")));
+                    return true;
+                } else {
+                    sender.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.NoPerm")));
+                }
             }
+            return true;
         }
         return true;
     }
 }
-

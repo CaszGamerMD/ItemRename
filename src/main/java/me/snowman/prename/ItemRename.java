@@ -173,7 +173,7 @@ public class ItemRename extends JavaPlugin {
                                 return;
                             }
                         }
-                        if (player.getOpenInventory().getItem(1).getItemMeta().getLore().equals(i.getLorecolortag()) && player.getOpenInventory().getItem(3).hasItemMeta() || player.getOpenInventory().getItem(3).equals(i.red()) || player.getOpenInventory().getItem(3).equals(i.black()) || player.getOpenInventory().getItem(3).equals(i.dgreen()) || player.getOpenInventory().getItem(3).equals(i.blue()) || player.getOpenInventory().getItem(3).equals(i.dpurple()) || player.getOpenInventory().getItem(3).equals(i.daqua()) || player.getOpenInventory().getItem(3).equals(i.gray()) || player.getOpenInventory().getItem(3).equals(i.dgray()) || player.getOpenInventory().getItem(3).equals(i.pink()) || player.getOpenInventory().getItem(3).equals(i.green()) || player.getOpenInventory().getItem(3).equals(i.yellow()) || player.getOpenInventory().getItem(3).equals(i.aqua()) || player.getOpenInventory().getItem(3).equals(i.gold()) || player.getOpenInventory().getItem(3).equals(i.white()) || player.getOpenInventory().getItem(3).equals(i.bold()) || player.getOpenInventory().getItem(3).equals(i.italic()) || player.getOpenInventory().getItem(3).equals(i.locked())) {
+                        if (player.getOpenInventory().getItem(1).getItemMeta().getLore().equals(i.getLorecolortag()) && player.getOpenInventory().getItem(3).hasItemMeta() || player.getOpenInventory().getItem(3).equals(i.red(1)) || player.getOpenInventory().getItem(3).equals(i.black(1)) || player.getOpenInventory().getItem(3).equals(i.darkgreen(1)) || player.getOpenInventory().getItem(3).equals(i.blue(1)) || player.getOpenInventory().getItem(3).equals(i.purple(1)) || player.getOpenInventory().getItem(3).equals(i.aqua(1)) || player.getOpenInventory().getItem(3).equals(i.gray(1)) || player.getOpenInventory().getItem(3).equals(i.darkgray(1)) || player.getOpenInventory().getItem(3).equals(i.pink(1)) || player.getOpenInventory().getItem(3).equals(i.green(1)) || player.getOpenInventory().getItem(3).equals(i.yellow(1)) || player.getOpenInventory().getItem(3).equals(i.lightblue(1)) || player.getOpenInventory().getItem(3).equals(i.gold(1)) || player.getOpenInventory().getItem(3).equals(i.white(1)) || player.getOpenInventory().getItem(3).equals(i.bold(1)) || player.getOpenInventory().getItem(3).equals(i.italic(1)) || player.getOpenInventory().getItem(3).equals(i.locked(1))) {
                             player.getOpenInventory().setItem(4, i.readyc());
                             List<String> rename = getConfig().getStringList("TagRenameLore");
                             rename.replaceAll(string -> msgUtils.colorize(string));
@@ -183,13 +183,13 @@ public class ItemRename extends JavaPlugin {
                                 if (player.getOpenInventory().getItem(3).getItemMeta().getLore().equals(i.getDyelore())) {
                                     ItemStack item7 = new ItemStack(item1);
                                     ItemMeta meta = item7.getItemMeta();
-                                    if (player.getOpenInventory().getItem(3).equals(i.locked())) {
+                                    if (player.getOpenInventory().getItem(3).equals(i.locked(1))) {
                                         meta.setLore(i.getLockedlore());
                                         item7.setItemMeta(meta);
                                         player.getOpenInventory().setItem(7, item7);
                                         return;
                                     }
-                                    if (player.getOpenInventory().getItem(3).equals(i.italic())) {
+                                    if (player.getOpenInventory().getItem(3).equals(i.italic(1))) {
                                         meta.setDisplayName(ChatColor.getLastColors(item1.getItemMeta().getDisplayName()) + ChatColor.ITALIC + ChatColor.stripColor(item1.getItemMeta().getDisplayName()));
                                         meta.addEnchant(Enchantment.LURE, 0, true);
                                         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -198,7 +198,7 @@ public class ItemRename extends JavaPlugin {
                                         player.getOpenInventory().setItem(7, item7);
                                         return;
                                     }
-                                    if (player.getOpenInventory().getItem(3).equals(i.bold())) {
+                                    if (player.getOpenInventory().getItem(3).equals(i.bold(1))) {
                                         meta.setDisplayName(ChatColor.getLastColors(item1.getItemMeta().getDisplayName()) + ChatColor.BOLD + ChatColor.stripColor(item1.getItemMeta().getDisplayName()));
                                         meta.addEnchant(Enchantment.LURE, 0, true);
                                         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -207,98 +207,98 @@ public class ItemRename extends JavaPlugin {
                                         player.getOpenInventory().setItem(7, item7);
                                         return;
                                     }
-                                    if (player.getOpenInventory().getItem(3).equals(i.black())) {
+                                    if (player.getOpenInventory().getItem(3).equals(i.black(1))) {
                                         meta.setDisplayName(ChatColor.BLACK + ChatColor.stripColor(item1.getItemMeta().getDisplayName()));
                                         meta.setLore(rename);
                                         item7.setItemMeta(meta);
                                         player.getOpenInventory().setItem(7, item7);
                                         return;
                                     }
-                                    if (player.getOpenInventory().getItem(3).equals(i.red())) {
+                                    if (player.getOpenInventory().getItem(3).equals(i.red(1))) {
                                         meta.setDisplayName(ChatColor.RED + ChatColor.stripColor(item1.getItemMeta().getDisplayName()));
                                         meta.setLore(rename);
                                         item7.setItemMeta(meta);
                                         player.getOpenInventory().setItem(7, item7);
                                         return;
                                     }
-                                    if (player.getOpenInventory().getItem(3).equals(i.dgreen())) {
+                                    if (player.getOpenInventory().getItem(3).equals(i.darkgreen(1))) {
                                         meta.setDisplayName(ChatColor.DARK_GREEN + ChatColor.stripColor(item1.getItemMeta().getDisplayName()));
                                         meta.setLore(rename);
                                         item7.setItemMeta(meta);
                                         player.getOpenInventory().setItem(7, item7);
                                         return;
                                     }
-                                    if (player.getOpenInventory().getItem(3).equals(i.blue())) {
+                                    if (player.getOpenInventory().getItem(3).equals(i.blue(1))) {
                                         meta.setDisplayName(ChatColor.BLUE + ChatColor.stripColor(item1.getItemMeta().getDisplayName()));
                                         meta.setLore(rename);
                                         item7.setItemMeta(meta);
                                         player.getOpenInventory().setItem(7, item7);
                                         return;
                                     }
-                                    if (player.getOpenInventory().getItem(3).equals(i.dpurple())) {
+                                    if (player.getOpenInventory().getItem(3).equals(i.purple(1))) {
                                         meta.setDisplayName(ChatColor.DARK_PURPLE + ChatColor.stripColor(item1.getItemMeta().getDisplayName()));
                                         meta.setLore(rename);
                                         item7.setItemMeta(meta);
                                         player.getOpenInventory().setItem(7, item7);
                                         return;
                                     }
-                                    if (player.getOpenInventory().getItem(3).equals(i.daqua())) {
+                                    if (player.getOpenInventory().getItem(3).equals(i.aqua(1))) {
                                         meta.setDisplayName(ChatColor.DARK_AQUA + ChatColor.stripColor(item1.getItemMeta().getDisplayName()));
                                         meta.setLore(rename);
                                         item7.setItemMeta(meta);
                                         player.getOpenInventory().setItem(7, item7);
                                         return;
                                     }
-                                    if (player.getOpenInventory().getItem(3).equals(i.gray())) {
+                                    if (player.getOpenInventory().getItem(3).equals(i.gray(1))) {
                                         meta.setDisplayName(ChatColor.GRAY + ChatColor.stripColor(item1.getItemMeta().getDisplayName()));
                                         meta.setLore(rename);
                                         item7.setItemMeta(meta);
                                         player.getOpenInventory().setItem(7, item7);
                                         return;
                                     }
-                                    if (player.getOpenInventory().getItem(3).equals(i.dgray())) {
+                                    if (player.getOpenInventory().getItem(3).equals(i.darkgray(1))) {
                                         meta.setDisplayName(ChatColor.DARK_GRAY + ChatColor.stripColor(item1.getItemMeta().getDisplayName()));
                                         meta.setLore(rename);
                                         item7.setItemMeta(meta);
                                         player.getOpenInventory().setItem(7, item7);
                                         return;
                                     }
-                                    if (player.getOpenInventory().getItem(3).equals(i.pink())) {
+                                    if (player.getOpenInventory().getItem(3).equals(i.pink(1))) {
                                         meta.setDisplayName(ChatColor.LIGHT_PURPLE + ChatColor.stripColor(item1.getItemMeta().getDisplayName()));
                                         meta.setLore(rename);
                                         item7.setItemMeta(meta);
                                         player.getOpenInventory().setItem(7, item7);
                                         return;
                                     }
-                                    if (player.getOpenInventory().getItem(3).equals(i.green())) {
+                                    if (player.getOpenInventory().getItem(3).equals(i.green(1))) {
                                         meta.setDisplayName(ChatColor.GREEN + ChatColor.stripColor(item1.getItemMeta().getDisplayName()));
                                         meta.setLore(rename);
                                         item7.setItemMeta(meta);
                                         player.getOpenInventory().setItem(7, item7);
                                         return;
                                     }
-                                    if (player.getOpenInventory().getItem(3).equals(i.yellow())) {
+                                    if (player.getOpenInventory().getItem(3).equals(i.yellow(1))) {
                                         meta.setDisplayName(ChatColor.YELLOW + ChatColor.stripColor(item1.getItemMeta().getDisplayName()));
                                         meta.setLore(rename);
                                         item7.setItemMeta(meta);
                                         player.getOpenInventory().setItem(7, item7);
                                         return;
                                     }
-                                    if (player.getOpenInventory().getItem(3).equals(i.aqua())) {
+                                    if (player.getOpenInventory().getItem(3).equals(i.lightblue(1))) {
                                         meta.setDisplayName(ChatColor.AQUA + ChatColor.stripColor(item1.getItemMeta().getDisplayName()));
                                         meta.setLore(rename);
                                         item7.setItemMeta(meta);
                                         player.getOpenInventory().setItem(7, item7);
                                         return;
                                     }
-                                    if (player.getOpenInventory().getItem(3).equals(i.gold())) {
+                                    if (player.getOpenInventory().getItem(3).equals(i.gold(1))) {
                                         meta.setDisplayName(ChatColor.GOLD + ChatColor.stripColor(item1.getItemMeta().getDisplayName()));
                                         meta.setLore(rename);
                                         item7.setItemMeta(meta);
                                         player.getOpenInventory().setItem(7, item7);
                                         return;
                                     }
-                                    if (player.getOpenInventory().getItem(3).equals(i.white())) {
+                                    if (player.getOpenInventory().getItem(3).equals(i.white(1))) {
                                         meta.setDisplayName(ChatColor.WHITE + ChatColor.stripColor(item1.getItemMeta().getDisplayName()));
                                         meta.setLore(rename);
                                         item7.setItemMeta(meta);
