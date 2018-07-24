@@ -4,7 +4,6 @@ package me.snowman.prename;
 import me.snowman.prename.Utils.MessageUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
-import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -27,18 +26,20 @@ public class Items {
         if (version.equals("1.8.") || version.equals("1.9.") || version.equals("1.10") || version.equals("1.11") || version.equals("1.12")) {
             Bukkit.getConsoleSender().sendMessage(msgUtils.colorize("&1Found server version: &f1.8 - 1.12.2"));
             mat.put("black", "INK_SACK");
-            mat.put("red", "INK_SACK");
-            mat.put("darkgreen", "INK_SACK");
             mat.put("blue", "INK_SACK");
-            mat.put("purple", "INK_SACK");
+            mat.put("green", "INK_SACK");
             mat.put("aqua", "INK_SACK");
+            mat.put("red", "NETHER_STALK");
+            mat.put("magenta", "INK_SACK");
+            mat.put("gold", "INK_SACK");
             mat.put("gray", "INK_SACK");
             mat.put("darkgray", "INK_SACK");
-            mat.put("pink", "INK_SACK");
-            mat.put("green", "INK_SACK");
-            mat.put("yellow", "INK_SACK");
+            mat.put("purple", "INK_SACK");
+            mat.put("lime", "INK_SACK");
             mat.put("lightblue", "INK_SACK");
-            mat.put("gold", "INK_SACK");
+            mat.put("lightred", "INK_SACK");
+            mat.put("pink", "INK_SACK");
+            mat.put("yellow", "INK_SACK");
             mat.put("white", "INK_SACK");
             mat.put("bold", "GLOWSTONE_DUST");
             mat.put("italic", "SUGAR");
@@ -52,18 +53,20 @@ public class Items {
         } else {
             Bukkit.getConsoleSender().sendMessage(msgUtils.colorize("&1Found server version: &f1.13"));
             mat.put("black", "INK_SAC");
-            mat.put("red", "ROSE_RED");
-            mat.put("darkgreen", "CACTUS_GREEN");
             mat.put("blue", "LAPIS_LAZULI");
-            mat.put("purple", "PURPLE_DYE");
+            mat.put("green", "CACTUS_GREEN");
             mat.put("aqua", "CYAN_DYE");
+            mat.put("red", "NETHER_WART");
+            mat.put("magenta", "PURPLE_DYE");
+            mat.put("gold", "ORANGE_DYE");
             mat.put("gray", "LIGHT_GRAY_DYE");
             mat.put("darkgray", "GRAY_DYE");
-            mat.put("pink", "PINK_DYE");
-            mat.put("green", "LIME_DYE");
-            mat.put("yellow", "DANDELION_YELLOW");
+            mat.put("purple", "PURPLE_DYE");
+            mat.put("lime", "LIME_DYE");
             mat.put("lightblue", "LIGHT_BLUE_DYE");
-            mat.put("gold", "ORANGE_DYE");
+            mat.put("lightred", "RED_DYE");
+            mat.put("pink", "PINK_DYE");
+            mat.put("yellow", "DANDELION_YELLOW");
             mat.put("white", "BONE_MEAL");
             mat.put("bold", "GLOWSTONE_DUST");
             mat.put("italic", "SUGAR");
@@ -105,6 +108,7 @@ public class Items {
         return lockedlore;
     }
 
+    //Items Generated via Plug
     public ItemStack black(int amount) {
         ItemStack black = new ItemStack(Material.matchMaterial(mat.get("black")), amount, (byte) 0);
         ItemMeta bmeta = black.getItemMeta();
@@ -113,48 +117,56 @@ public class Items {
         return black;
     }
 
-    public ItemStack red(int amount) {
-        ItemStack red = new ItemStack(Material.matchMaterial(mat.get("red")), 1, (byte) 1);
-        ItemMeta rmeta = red.getItemMeta();
-        rmeta.setLore(getDyelore());
-        red.setItemMeta(rmeta);
-        return red;
-    }
-
-    public ItemStack darkgreen(int amount) {
-        ItemStack darkgreen = new ItemStack(Material.matchMaterial(mat.get("darkgreen")), amount, (byte) 2);
-        ItemMeta dgmeta = darkgreen.getItemMeta();
-        dgmeta.setLore(getDyelore());
-        darkgreen.setItemMeta(dgmeta);
-        return darkgreen;
-    }
-
     public ItemStack blue(int amount) {
-        ItemStack blue = new ItemStack(Material.matchMaterial(mat.get("blue")), 1, (byte) 4);
+        ItemStack blue = new ItemStack(Material.matchMaterial(mat.get("blue")), amount, (byte) 4);
         ItemMeta blmeta = blue.getItemMeta();
         blmeta.setLore(getDyelore());
         blue.setItemMeta(blmeta);
         return blue;
     }
 
-    public ItemStack purple(int amount) {
-        ItemStack purple = new ItemStack(Material.matchMaterial(mat.get("purple")), amount, (byte) 5);
-        ItemMeta dpmeta = purple.getItemMeta();
-        dpmeta.setLore(getDyelore());
-        purple.setItemMeta(dpmeta);
-        return purple;
+    public ItemStack green(int amount) {
+        ItemStack green = new ItemStack(Material.matchMaterial(mat.get("green")), amount, (byte) 2);
+        ItemMeta dgmeta = green.getItemMeta();
+        dgmeta.setLore(getDyelore());
+        green.setItemMeta(dgmeta);
+        return green;
     }
 
     public ItemStack aqua(int amount) {
-        ItemStack aqua = new ItemStack(Material.matchMaterial(mat.get("aqua")), 1, (byte) 6);
+        ItemStack aqua = new ItemStack(Material.matchMaterial(mat.get("aqua")), amount, (byte) 6);
         ItemMeta dameta = aqua.getItemMeta();
         dameta.setLore(getDyelore());
         aqua.setItemMeta(dameta);
         return aqua;
     }
 
+    public ItemStack red(int amount) {
+        ItemStack red = new ItemStack(Material.matchMaterial(mat.get("red")), amount);
+        ItemMeta rmeta = red.getItemMeta();
+        rmeta.setLore(getDyelore());
+        red.setItemMeta(rmeta);
+        return red;
+    }
+
+    public ItemStack magenta(int amount) {
+        ItemStack magenta = new ItemStack(Material.matchMaterial(mat.get("magenta")), amount, (byte) 13);
+        ItemMeta dpmeta = magenta.getItemMeta();
+        dpmeta.setLore(getDyelore());
+        magenta.setItemMeta(dpmeta);
+        return magenta;
+    }
+
+    public ItemStack gold(int amount) {
+        ItemStack gold = new ItemStack(Material.matchMaterial(mat.get("gold")), amount, (byte) 14);
+        ItemMeta gometa = gold.getItemMeta();
+        gometa.setLore(getDyelore());
+        gold.setItemMeta(gometa);
+        return gold;
+    }
+
     public ItemStack gray(int amount) {
-        ItemStack gray = new ItemStack(Material.matchMaterial(mat.get("gray")), 1, (byte) 7);
+        ItemStack gray = new ItemStack(Material.matchMaterial(mat.get("gray")), amount, (byte) 7);
         ItemMeta gmeta = gray.getItemMeta();
         gmeta.setLore(getDyelore());
         gray.setItemMeta(gmeta);
@@ -169,28 +181,20 @@ public class Items {
         return darkgray;
     }
 
-    public ItemStack pink(int amount) {
-        ItemStack pink = new ItemStack(Material.matchMaterial(mat.get("pink")), 1, (byte) 9);
-        ItemMeta lpmeta = pink.getItemMeta();
-        lpmeta.setLore(getDyelore());
-        pink.setItemMeta(lpmeta);
-        return pink;
+    public ItemStack purple(int amount) {
+        ItemStack purple = new ItemStack(Material.matchMaterial(mat.get("purple")), amount, (byte) 5);
+        ItemMeta ameta = purple.getItemMeta();
+        ameta.setLore(getDyelore());
+        purple.setItemMeta(ameta);
+        return purple;
     }
 
-    public ItemStack green(int amount) {
-        ItemStack green = new ItemStack(Material.matchMaterial(mat.get("green")), amount, (byte) 10);
-        ItemMeta grmeta = green.getItemMeta();
+    public ItemStack lime(int amount) {
+        ItemStack lime = new ItemStack(Material.matchMaterial(mat.get("lime")), amount, (byte) 10);
+        ItemMeta grmeta = lime.getItemMeta();
         grmeta.setLore(getDyelore());
-        green.setItemMeta(grmeta);
-        return green;
-    }
-
-    public ItemStack yellow(int amount) {
-        ItemStack yellow = new ItemStack(Material.matchMaterial(mat.get("yellow")), 1, (byte) 11);
-        ItemMeta ymeta = yellow.getItemMeta();
-        ymeta.setLore(getDyelore());
-        yellow.setItemMeta(ymeta);
-        return yellow;
+        lime.setItemMeta(grmeta);
+        return lime;
     }
 
     public ItemStack lightblue(int amount) {
@@ -201,12 +205,28 @@ public class Items {
         return lightblue;
     }
 
-    public ItemStack gold(int amount) {
-        ItemStack gold = new ItemStack(Material.matchMaterial(mat.get("gold")), amount, (byte) 14);
-        ItemMeta gometa = gold.getItemMeta();
-        gometa.setLore(getDyelore());
-        gold.setItemMeta(gometa);
-        return gold;
+    public ItemStack lightred(int amount) {
+        ItemStack lightred = new ItemStack(Material.matchMaterial(mat.get("lightred")), amount, (byte) 1);
+        ItemMeta ameta = lightred.getItemMeta();
+        ameta.setLore(getDyelore());
+        lightred.setItemMeta(ameta);
+        return lightred;
+    }
+
+    public ItemStack pink(int amount) {
+        ItemStack pink = new ItemStack(Material.matchMaterial(mat.get("pink")), amount, (byte) 9);
+        ItemMeta lpmeta = pink.getItemMeta();
+        lpmeta.setLore(getDyelore());
+        pink.setItemMeta(lpmeta);
+        return pink;
+    }
+
+    public ItemStack yellow(int amount) {
+        ItemStack yellow = new ItemStack(Material.matchMaterial(mat.get("yellow")), amount, (byte) 11);
+        ItemMeta ymeta = yellow.getItemMeta();
+        ymeta.setLore(getDyelore());
+        yellow.setItemMeta(ymeta);
+        return yellow;
     }
 
     public ItemStack white(int amount) {
@@ -218,7 +238,7 @@ public class Items {
     }
 
     public ItemStack bold(int amount) {
-        ItemStack bold = new ItemStack(Material.matchMaterial(mat.get("glowstone_dust")), amount);
+        ItemStack bold = new ItemStack(Material.matchMaterial(mat.get("bold")), amount);
         ItemMeta bldmeta = bold.getItemMeta();
         bldmeta.setLore(getDyelore());
         bold.setItemMeta(bldmeta);
@@ -226,7 +246,7 @@ public class Items {
     }
 
     public ItemStack italic(int amount) {
-        ItemStack italic = new ItemStack(Material.matchMaterial(mat.get("sugar")), amount);
+        ItemStack italic = new ItemStack(Material.matchMaterial(mat.get("italic")), amount);
         ItemMeta imeta = italic.getItemMeta();
         imeta.setLore(getDyelore());
         italic.setItemMeta(imeta);
@@ -234,7 +254,7 @@ public class Items {
     }
 
     public ItemStack locked(int amount) {
-        ItemStack locked = new ItemStack(Material.matchMaterial(mat.get("iron_fence")), amount);
+        ItemStack locked = new ItemStack(Material.matchMaterial(mat.get("locked")), amount);
         ItemMeta lmeta = locked.getItemMeta();
         lmeta.setLore(getDyelore());
         locked.setItemMeta(lmeta);
@@ -304,7 +324,6 @@ public class Items {
 
     public ItemStack dyeColor(String color, int amount) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
 
-        System.out.println(color);
         Items getItem = new Items();
         Method method = Items.class.getMethod(color, int.class);
         ItemStack output = (ItemStack) method.invoke(getItem, amount);

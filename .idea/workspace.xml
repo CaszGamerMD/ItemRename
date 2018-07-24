@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49ca7088-5784-4e2d-9310-099e2c64174a" name="Default" comment="" />
+    <list default="true" id="49ca7088-5784-4e2d-9310-099e2c64174a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/snowman/prename/Commands/Rename.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/snowman/prename/Commands/Rename.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/snowman/prename/ItemRename.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/snowman/prename/ItemRename.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/snowman/prename/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/snowman/prename/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ItemReame-1.3.jar" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,26 +19,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Items.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Items.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Items.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="304" selection-start-line="304" selection-end-line="312" selection-end-column="5" />
+            <state relative-caret-position="165">
+              <caret line="110" column="30" selection-start-line="110" selection-start-column="30" selection-end-line="110" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#black#0;class#Items#0" />
-                <element signature="method#red#0;class#Items#0" />
-                <element signature="method#darkgreen#0;class#Items#0" />
                 <element signature="method#blue#0;class#Items#0" />
-                <element signature="method#purple#0;class#Items#0" />
+                <element signature="method#green#0;class#Items#0" />
                 <element signature="method#aqua#0;class#Items#0" />
+                <element signature="method#red#0;class#Items#0" />
+                <element signature="method#magenta#0;class#Items#0" />
+                <element signature="method#gold#0;class#Items#0" />
                 <element signature="method#gray#0;class#Items#0" />
                 <element signature="method#darkgray#0;class#Items#0" />
-                <element signature="method#pink#0;class#Items#0" />
-                <element signature="method#green#0;class#Items#0" />
-                <element signature="method#yellow#0;class#Items#0" />
+                <element signature="method#purple#0;class#Items#0" />
+                <element signature="method#lime#0;class#Items#0" />
                 <element signature="method#lightblue#0;class#Items#0" />
-                <element signature="method#gold#0;class#Items#0" />
+                <element signature="method#lightred#0;class#Items#0" />
+                <element signature="method#pink#0;class#Items#0" />
+                <element signature="method#yellow#0;class#Items#0" />
                 <element signature="method#white#0;class#Items#0" />
                 <element signature="method#bold#0;class#Items#0" />
                 <element signature="method#italic#0;class#Items#0" />
@@ -43,19 +51,35 @@
                 <element signature="method#waiting#0;class#Items#0" />
                 <element signature="method#readyr#0;class#Items#0" />
                 <element signature="method#readyc#0;class#Items#0" />
+                <element signature="method#empty#0;class#Items#0" />
+                <element signature="method#dyeColor#0;class#Items#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rename.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Rename.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Commands/Rename.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-550">
-              <caret line="151" column="167" lean-forward="true" selection-start-line="151" selection-start-column="167" selection-end-line="151" selection-end-column="167" />
+            <state relative-caret-position="797">
+              <caret line="176" column="25" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugin.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -75,11 +99,13 @@
       <find>ChatColor.translateAlternateColorCodes('&amp;',</find>
       <find>ChatColor</find>
       <find>())</find>
+      <find>, 1,</find>
     </findStrings>
     <replaceStrings>
       <replace>msgUtils.colorize(</replace>
       <replace>1</replace>
       <replace>(1))</replace>
+      <replace>, amount,</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -91,9 +117,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/me/snowman/prename/Utils/MessageUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/snowman/prename/Events/ClickInv.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
         <option value="$PROJECT_DIR$/src/main/java/me/snowman/prename/ItemRename.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/snowman/prename/Items.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/snowman/prename/Commands/Rename.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/snowman/prename/Items.java" />
       </list>
     </option>
   </component>
@@ -121,9 +148,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="215" />
+    <option name="x" value="605" />
     <option name="y" value="22" />
-    <option name="width" value="1694" />
+    <option name="width" value="1304" />
     <option name="height" value="904" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -175,6 +202,22 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="prename" type="462c0819:PsiDirectoryNode" />
               <item name="Commands" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="snowman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snowman" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="prename" type="462c0819:PsiDirectoryNode" />
+              <item name="Events" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="snowman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snowman" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -257,28 +300,29 @@
       <workItem from="1532377844139" duration="41000" />
       <workItem from="1532377913890" duration="4226000" />
       <workItem from="1532405986730" duration="3326000" />
-      <workItem from="1532409680004" duration="9605000" />
+      <workItem from="1532409680004" duration="15475000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17198000" />
+    <option name="totallyTimeSpent" value="23068000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="215" y="22" width="1694" height="904" extended-state="0" />
+    <frame x="605" y="22" width="1304" height="904" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.12590799" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.1251981" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35935563" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.28026634" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.09508716" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3283767" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -289,31 +333,30 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.28026634" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.09508716" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35935563" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3283767" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.12590799" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.1251981" />
       <window_info id="Favorites" order="3" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -324,19 +367,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Items.java</url>
-          <line>293</line>
+          <url>file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Commands/Rename.java</url>
+          <line>129</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Items.java</url>
-          <line>268</line>
+          <line>176</line>
           <properties />
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -347,18 +390,20 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#black#0;class#Items#0" />
-            <element signature="method#red#0;class#Items#0" />
-            <element signature="method#darkgreen#0;class#Items#0" />
             <element signature="method#blue#0;class#Items#0" />
-            <element signature="method#purple#0;class#Items#0" />
+            <element signature="method#green#0;class#Items#0" />
             <element signature="method#aqua#0;class#Items#0" />
+            <element signature="method#red#0;class#Items#0" />
+            <element signature="method#magenta#0;class#Items#0" />
+            <element signature="method#gold#0;class#Items#0" />
             <element signature="method#gray#0;class#Items#0" />
             <element signature="method#darkgray#0;class#Items#0" />
-            <element signature="method#pink#0;class#Items#0" />
-            <element signature="method#green#0;class#Items#0" />
-            <element signature="method#yellow#0;class#Items#0" />
+            <element signature="method#purple#0;class#Items#0" />
+            <element signature="method#lime#0;class#Items#0" />
             <element signature="method#lightblue#0;class#Items#0" />
-            <element signature="method#gold#0;class#Items#0" />
+            <element signature="method#lightred#0;class#Items#0" />
+            <element signature="method#pink#0;class#Items#0" />
+            <element signature="method#yellow#0;class#Items#0" />
             <element signature="method#white#0;class#Items#0" />
             <element signature="method#bold#0;class#Items#0" />
             <element signature="method#italic#0;class#Items#0" />
@@ -369,6 +414,8 @@
             <element signature="method#waiting#0;class#Items#0" />
             <element signature="method#readyr#0;class#Items#0" />
             <element signature="method#readyc#0;class#Items#0" />
+            <element signature="method#empty#0;class#Items#0" />
+            <element signature="method#dyeColor#0;class#Items#0" />
           </folding>
         </state>
       </provider>
@@ -403,18 +450,20 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#black#0;class#Items#0" />
-            <element signature="method#red#0;class#Items#0" />
-            <element signature="method#darkgreen#0;class#Items#0" />
             <element signature="method#blue#0;class#Items#0" />
-            <element signature="method#purple#0;class#Items#0" />
+            <element signature="method#green#0;class#Items#0" />
             <element signature="method#aqua#0;class#Items#0" />
+            <element signature="method#red#0;class#Items#0" />
+            <element signature="method#magenta#0;class#Items#0" />
+            <element signature="method#gold#0;class#Items#0" />
             <element signature="method#gray#0;class#Items#0" />
             <element signature="method#darkgray#0;class#Items#0" />
-            <element signature="method#pink#0;class#Items#0" />
-            <element signature="method#green#0;class#Items#0" />
-            <element signature="method#yellow#0;class#Items#0" />
+            <element signature="method#purple#0;class#Items#0" />
+            <element signature="method#lime#0;class#Items#0" />
             <element signature="method#lightblue#0;class#Items#0" />
-            <element signature="method#gold#0;class#Items#0" />
+            <element signature="method#lightred#0;class#Items#0" />
+            <element signature="method#pink#0;class#Items#0" />
+            <element signature="method#yellow#0;class#Items#0" />
             <element signature="method#white#0;class#Items#0" />
             <element signature="method#bold#0;class#Items#0" />
             <element signature="method#italic#0;class#Items#0" />
@@ -425,6 +474,8 @@
             <element signature="method#waiting#0;class#Items#0" />
             <element signature="method#readyr#0;class#Items#0" />
             <element signature="method#readyc#0;class#Items#0" />
+            <element signature="method#empty#0;class#Items#0" />
+            <element signature="method#dyeColor#0;class#Items#0" />
           </folding>
         </state>
       </provider>
@@ -495,10 +546,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.12.2-R0.1-SNAPSHOT/spigot-api-1.12.2-R0.1-20180712.012057-156.jar!/org/bukkit/inventory/InventoryView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/ItemRename.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="152">
+          <caret line="195" column="61" lean-forward="true" selection-start-line="195" selection-start-column="61" selection-end-line="195" selection-end-column="61" />
           <folding>
             <element signature="method#onDisable#0;class#ItemRename#0" />
             <element signature="method#setupEconomy#0;class#ItemRename#0" />
@@ -506,25 +571,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Commands/Rename.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="797">
+          <caret line="176" column="25" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Items.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="304" selection-start-line="304" selection-end-line="312" selection-end-column="5" />
+        <state relative-caret-position="165">
+          <caret line="110" column="30" selection-start-line="110" selection-start-column="30" selection-end-line="110" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#black#0;class#Items#0" />
-            <element signature="method#red#0;class#Items#0" />
-            <element signature="method#darkgreen#0;class#Items#0" />
             <element signature="method#blue#0;class#Items#0" />
-            <element signature="method#purple#0;class#Items#0" />
+            <element signature="method#green#0;class#Items#0" />
             <element signature="method#aqua#0;class#Items#0" />
+            <element signature="method#red#0;class#Items#0" />
+            <element signature="method#magenta#0;class#Items#0" />
+            <element signature="method#gold#0;class#Items#0" />
             <element signature="method#gray#0;class#Items#0" />
             <element signature="method#darkgray#0;class#Items#0" />
-            <element signature="method#pink#0;class#Items#0" />
-            <element signature="method#green#0;class#Items#0" />
-            <element signature="method#yellow#0;class#Items#0" />
+            <element signature="method#purple#0;class#Items#0" />
+            <element signature="method#lime#0;class#Items#0" />
             <element signature="method#lightblue#0;class#Items#0" />
-            <element signature="method#gold#0;class#Items#0" />
+            <element signature="method#lightred#0;class#Items#0" />
+            <element signature="method#pink#0;class#Items#0" />
+            <element signature="method#yellow#0;class#Items#0" />
             <element signature="method#white#0;class#Items#0" />
             <element signature="method#bold#0;class#Items#0" />
             <element signature="method#italic#0;class#Items#0" />
@@ -535,16 +615,8 @@
             <element signature="method#waiting#0;class#Items#0" />
             <element signature="method#readyr#0;class#Items#0" />
             <element signature="method#readyc#0;class#Items#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/snowman/prename/Commands/Rename.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-550">
-          <caret line="151" column="167" lean-forward="true" selection-start-line="151" selection-start-column="167" selection-end-line="151" selection-end-column="167" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#empty#0;class#Items#0" />
+            <element signature="method#dyeColor#0;class#Items#0" />
           </folding>
         </state>
       </provider>

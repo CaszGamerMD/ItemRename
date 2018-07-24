@@ -126,15 +126,17 @@ public class Rename implements CommandExecutor {
                     if (player.hasPermission("itemrename.dye")) {
                         int amount = 1;
                         if (args[1].equalsIgnoreCase("all")) {
+                            player.getInventory().addItem(i.lightred(amount));
                             player.getInventory().addItem(i.red(amount));
                             player.getInventory().addItem(i.gold(amount));
                             player.getInventory().addItem(i.yellow(amount));
+                            player.getInventory().addItem(i.lime(amount));
                             player.getInventory().addItem(i.green(amount));
-                            player.getInventory().addItem(i.darkgreen(amount));
                             player.getInventory().addItem(i.aqua(amount));
                             player.getInventory().addItem(i.lightblue(amount));
                             player.getInventory().addItem(i.blue(amount));
                             player.getInventory().addItem(i.purple(amount));
+                            player.getInventory().addItem(i.magenta(amount));
                             player.getInventory().addItem(i.pink(amount));
                             player.getInventory().addItem(i.white(amount));
                             player.getInventory().addItem(i.gray(amount));
@@ -143,11 +145,11 @@ public class Rename implements CommandExecutor {
                             player.getInventory().addItem(i.bold(amount));
                             player.getInventory().addItem(i.italic(amount));
                             player.getInventory().addItem(i.locked(amount));
-                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", "&5Sampler Set"));
+                            player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGiveAll")));
                         } else {
                             try {
                                 player.getInventory().addItem(i.dyeColor(args[1], amount));
-                                player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]));
+                                player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.DyeGive")).replace("%dye%", args[1]).replace("%amt%", "1"));
                             } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
                                 sender.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.NoDye") + "\n&0BLACK&7, &4RED&7, &2DARKGREEN&7, &3AQUA&7, &5DARKPURPLE&7, &1BLUE&7, &7GRAY, &8DARKGRAY&7, &dPINK&7, &aGREEN&7, &eYELLOW, &bLIGHTBLUE&7, &6GOLD&7, &fWHITE&7, &r&lBOLD&7, &r&oITALIC&7, &8LOCKED"));
                             }
@@ -158,6 +160,7 @@ public class Rename implements CommandExecutor {
                     }
                 }
             }
+        }
 
             if (args[0].equalsIgnoreCase("tag")) {
                 if (!(sender instanceof Player)) {
@@ -172,7 +175,6 @@ public class Rename implements CommandExecutor {
                             //noinspection StringConcatenationInLoop
                             name = name + args[i] + " ";
                         }
-                        System.out.println(name);
                         ItemStack tag = new ItemStack(Material.NAME_TAG, 1);
                         ItemMeta tagmeta = tag.getItemMeta();
                         lorecolortag.replaceAll(string -> msgUtils.colorize(string));
@@ -180,7 +182,7 @@ public class Rename implements CommandExecutor {
                         tagmeta.setDisplayName(msgUtils.colorize(name));
                         tag.setItemMeta(tagmeta);
                         player.getInventory().addItem(tag);
-                        player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.TagGive")));
+                        player.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.TagGiveCustom" + name)));
                         return true;
 
                     } else {
@@ -197,6 +199,7 @@ public class Rename implements CommandExecutor {
                     }
                 } else {
                     sender.sendMessage(msgUtils.colorize(plugin.getConfig().getString("Messages.NoPerm")));
+                    return true;
                 }
             }
 
@@ -213,6 +216,5 @@ public class Rename implements CommandExecutor {
             }
             return true;
         }
-        return true;
     }
-}
+
